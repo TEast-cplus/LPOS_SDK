@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>htwos_ros2_adapter</name>
+  <version>1.0.0</version>
+  <description>HTWOS ROS2 Adapter SDK placeholder</description>
+  <maintainer email="dev@hantewin.local">Hantewin</maintainer>
+  <license>Proprietary</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

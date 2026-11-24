@@ -1,0 +1,44 @@
+# Informal schema for HTWOS capability profiles (YAML)
+# Formal JSON Schema can replace this later.
+title: HtwosCapabilityProfile
+type: object
+required: [platform, capabilities]
+properties:
+  platform:
+    type: object
+    required: [id, soc]
+    properties:
+      id: { type: string }
+      soc: { type: string }
+  capabilities:
+    type: object
+    properties:
+      camera:
+        type: object
+        properties:
+          supported: { type: boolean }
+          max_streams: { type: integer }
+      imu:
+        type: object
+        properties:
+          supported: { type: boolean }
+          interfaces:
+            type: array
+            items: { type: string }
+      motor:
+        type: object
+        properties:
+          supported: { type: boolean }
+          interfaces:
+            type: array
+            items: { type: string }
+      npu:
+        type: object
+        properties:
+          supported: { type: boolean }
+          backend: { type: string }
+      realtime:
+        type: object
+        properties:
+          linux_rt: { type: boolean }
+          external_mcu: { type: boolean }

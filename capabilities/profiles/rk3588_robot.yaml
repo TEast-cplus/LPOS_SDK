@@ -1,0 +1,24 @@
+platform:
+  id: rk3588_robot
+  soc: rk3588
+
+capabilities:
+  camera:
+    supported: true
+    max_streams: 2
+
+  imu:
+    supported: true
+    interfaces: [i2c, spi]
+
+  motor:
+    supported: true
+    interfaces: [can]
+
+  npu:
+    supported: true
+    backend: rknn
+
+  realtime:
+    linux_rt: false
+    external_mcu: true

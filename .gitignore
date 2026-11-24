@@ -1,0 +1,38 @@
+# Build
+build/
+cmake-build-*/
+out/
+install/
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.lib
+*.pdb
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+compile_commands.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+dist/
+*.egg-info/
+
+# ROS2
+install/
+log/
+build/
+
+# Misc
+*.log
+.DS_Store
+Thumbs.db

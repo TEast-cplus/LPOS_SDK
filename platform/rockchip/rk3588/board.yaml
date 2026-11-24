@@ -1,0 +1,9 @@
+# Example board profile sitting on RK3588 SOC
+board_id: rk3588_robot
+platform_id: rk3588
+memory:
+  ram_gb: 8
+capabilities_profile: rk3588_robot
+notes: >
+  Values are illustrative until board bring-up and HAL
+  conformance tests complete.

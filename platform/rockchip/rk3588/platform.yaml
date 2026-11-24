@@ -1,0 +1,27 @@
+# HTWOS platform profile - Rockchip RK3588
+id: rk3588
+soc: RK3588
+vendor: rockchip
+kernel: "TBD"          # fill with verified kernel version
+bsp: "TBD"             # vendor BSP version
+npu:
+  backends: ["rknn"]
+gpu:
+  notes: "Mali-G610 class (board dependent)"
+camera:
+  interfaces: ["mipi", "usb", "isp"]
+audio:
+  stack: ["alsa"]
+can:
+  controllers: ["socketcan"]
+gpio:
+  available: true
+memory:
+  ram_gb: 0            # board-specific, override in board.yaml
+supported_hal:
+  - camera
+  - imu
+  - motor
+  - npu
+  - gpio
+  - can

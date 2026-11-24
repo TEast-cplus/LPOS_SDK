@@ -1,0 +1,14 @@
+id: jetson
+soc: Jetson
+vendor: nvidia
+kernel: "TBD"
+bsp: "TBD"
+npu:
+  backends: ["tensorrt"]
+camera:
+  interfaces: ["csi", "usb"]
+supported_hal:
+  - camera
+  - imu
+  - motor
+  - npu

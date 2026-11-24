@@ -1,0 +1,11 @@
+id: mcu_common
+soc: MCU
+vendor: various
+role: realtime_companion
+supported_hal:
+  - gpio
+  - can
+  - motor
+notes: >
+  MCU providers handle high-rate control and safety loops.
+  Firmware versions are tracked independently of Edge OS.
